@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HaoYu Tseng Personal Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a id="bar" href = "#section1">HOME</a></li>
+            <li><a id="bar" href = "#section2">PROFESSIONAL</a></li>
+            <li><a id="bar" href = "#section3">EXPERIENCE</a></li>
+            <li><a id="bar" href = "#section4">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div id = "section1">
+        <h1>I<span class="dot">'</span>M<br>HAO-YU TSENG<br>(Andy)</h1>
+        <h3>Welcome to my page!</h3>
+
+    </div>
+    <div id = "section2">
+        <h1>PROFESSIONAL</h1>
+        <section>
+            <div class = "wrap">
+                <div class = "bar">
+                    <h3>Python<abbr>80%</abbr></h3>
+                    <div class="thumb"><span></span></div>
+                </div>
+                <div class = "bar">
+                    <h3>LabVIEW<abbr>70%</abbr></h3>
+                    <div class="thumb"><span></span></div>
+                </div>
+                <div class = "bar">
+                    <h3>Verilog<abbr>70%</abbr></h3>
+                    <div class="thumb"><span></span></div>
+                </div>
+                <div class = "bar">
+                    <h3>C programming<abbr>60%</abbr></h3>
+                    <div class="thumb"><span></span></div>
+                </div>
+                <div class = "bar">
+                    <h3>SystemC<abbr>50%</abbr></h3>
+                    <div class="thumb"><span></span></div>
+                </div>
+                <div class = "bar">
+                    <h3>HTML<abbr>50%</abbr></h3>
+                    <div class="thumb"><span></span></div>
+                </div>
+                <div class = "bar">
+                    <h3>CSS<abbr>50%</abbr></h3>
+                    <div class="thumb"><span></span></div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <div id = "section3">
+        <h1>EXPERIENCE</h1>
+        <div class = "timeline">
+            <div class = "container left-container">
+                <img src="NSYSU.png">
+                <div class = "text-box">
+                    <h2>National Sun Yat-sen University</h2>
+                    <p style="font-family: 'Monotype Corsiva', cursive;"> Sep. 2017 ~ Jun. 2021 </p>
+                    <p>
+                        &#128161 Literature Review on Generative Adversarial Networks (Machine Learning)
+                        <br>
+                        &#128161 Image Sorting Engine (Hardware Design)<br>
+                    </p>
+                    <span class = "left-container-arrow"></span>
+                </div>
+            </div>
+
+            <div class = "container right-container">
+                <img src="NXP.png">
+                <div class = "text-box">
+                    <h2>NXP Semiconductors</h2>
+                    <p style="font-family: 'Monotype Corsiva', cursive;"> Jan. 2021 ~ Jun. 2021 </p>
+                    <p> Position: Intern</p>
+                    <p>
+                        &#9755 Independently built a Code Module & Simulation tool with LabVIEW.<br>
+                        - Resulting in a 20% reduction in coding time and improved accuracy<br>
+                        &#9755 Collected and analyzed SMS statistics<br>
+                        &#9755 Debugged Oven Monitoring system 
+                    </p>
+                    <span class = "right-container-arrow"></span>
+                </div>
+            </div>
+
+            <div class = "container left-container">
+                <img src="UCI.png">
+                <div class = "text-box">
+                    <h2>University of California, Irvine</h2>
+                    <p style="font-family: 'Monotype Corsiva', cursive;"> Sep. 2022 ~ present </p>
+                    <p>
+                        &#128161 SLDL model: Canny Edge Decoder (Embedded System)
+                        <br>
+                        <p style="color:red">--current project:</p>
+                        &#128161  Vehicle Detection with YOLOv3 (Deep Learning)
+                    </p>
+                    <span class = "left-container-arrow"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id = "section4">
+        <h1>CONTACT</h1>
+        <div class="info">
+            <p class="mailandphone">E-mail:<a class="mailandphone" href="mailto:dd121399tw@gmail.com">dd121399tw@gmail.com</a><br>
+            Tel:+1-949-771-6633</p>
+        </div>
+        <div class = 'link'>
+            <a id="link" href='https://www.meta.com/'><img src="new-linkedin-logo-white-black-png.png" width="50" height="50"></a>
+            <a id="link" href='https://www.meta.com/'><img src="github-mark.png" width="50" height="50"></a>
+            <a id="link" href='https://www.meta.com/'><img src="icons-instagram.png" width="50" height="50"></a>
+            <a id="link" href='https://www.meta.com/'><img src="icons8-facebook-96.png" width="50" height="50"></a>
+        </div>
+    </div>
+
+<!--GSAP-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<!--ScrollTrigger-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+<script>
+gsap.from(".bar abbr",{
+    scrollTrigger:".bar",
+    left: 0,
+    ease: Power2.easeInOut,
+    duration: 3,
+    stagger: 0.1
+});
+gsap.from(".bar span",{
+    scrollTrigger:".bar",
+    width: "0px",
+    ease: Power2.easeInOut,
+    duration: 3,
+    stagger: 0.1
+});
+</script>
+   
+</body>
+
+</html>
