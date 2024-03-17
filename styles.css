@@ -186,25 +186,25 @@ section:nth-child(odd){
     font-size: 15px;
 }
 .bar:nth-child(1) abbr{
-    left: 80%;
+    left: 90%;
 }
 .bar:nth-child(2) abbr{
-    left: 70%;
+    left: 80%;
 }
 .bar:nth-child(3) abbr{
-    left: 70%;
+    left: 80%;
 }
 .bar:nth-child(4) abbr{
-    left: 60%;
+    left: 80%;
 }
 .bar:nth-child(5) abbr{
-    left: 50%;
+    left: 60%;
 }
 .bar:nth-child(6) abbr{
-    left: 50%;
+    left: 60%;
 }
 .bar:nth-child(7) abbr{
-    left: 50%;
+    left: 60%;
 }
 
 
